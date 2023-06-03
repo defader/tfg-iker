@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xakea</title>
+    <link rel="stylesheet" href="estilos/index.css">
+    <link rel="stylesheet" href="estilos/estilosCookies.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <p class="logo"><a href="index.html"> Xakea</a></p>
+            <nav id="navSinCookies" style="display: block;">
+                <a href="biblioteca.php">Biblioteca</a>
+                <a href="registrarse.html">Registrarse</a>
+                <a href="iniciarSesion.html">Iniciar sesión</a>
+            </nav>
+            <nav id="navConCookies" style="display: none;">
+                <a href="biblioteca.php">Biblioteca</a>
+                <a href="biblioteca.php">Bienvenido <output id="nombreUsuario"></output></a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="analisis">
+        
+        <h1>Analiza tus partidas <br>con el mejor editor</h1><br>
+        <a href="analisis.html"><button id="cargar"><label>Tablero de análisis</label> </button></a>
+    
+    </section>
+
+  
+	<div class="aviso-cookies" id="aviso-cookies">
+		<img class="galleta" src="./media/cookie.svg" alt="Galleta">
+		<h3 class="titulo">Cookies</h3>
+		<p class="parrafo">Utilizamos cookies propias y de terceros para mejorar nuestros servicios.</p>
+		<button class="boton" id="btn-aceptar-cookies">De acuerdo</button>
+		<a class="enlace" href="aviso-cookies.html">Aviso de Cookies</a>
+	</div>
+	<div class="fondo-aviso-cookies" id="fondo-aviso-cookies"></div>
+
+
+
+
+    <section id="somos-proya">
+        <div class="container">
+            <div class="img-container"></div>
+            <div class="texto">
+
+                <h2>¿Qué es  <span class="color-acento">Xakea</span>?</h2>
+                <p>Xakea (ajedrez en euskera) nace en la necesidad de encontrar un entorno gráfico sencillo y fácil de usar para todos los usuarios. <br><br>
+
+                    Partidas sin necesidad de registrarse, sin necesidad de introducir ni correo ni teléfono.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="nuestros-programas">
+        <div class="container">
+            <h2>Información</h2>
+            <div class="programas">
+                <div class="carta">
+                    <h3>Ajedrez biológicamente</h3>
+                    <p>El ajedrez tiene destacados beneficios, esto radica en que activa los dos hemisferios cerebrales. Por ello desarrollamos habilidades de razonamiento, así como habilidades creativas. ¡Te contamos más!</p>
+                  <a href="https://muysalud.com/mente/beneficios-del-ajedrez-segun-la-ciencia/">  <button>+ Info</button></a>
+                </div>
+                <div class="carta">
+                    <h3>Ajedrez históricamente</h3>
+                    <p>A lo largo de sus casi 1.500 años de historia, el ajedrez ha dado lugar a una gran variedad de juegos y modos de jugar: desde un simple pasatiempo hasta un deporte intelectual con grandes sumas de dinero en juego.</p>
+                    <a href="https://historia.nationalgeographic.com.es/a/historia-ajedrez-juego-milenario_15981">  <button>+ Info</button></a>
+                </div>
+                <div class="carta">
+                    <h3>Mis primeros pasos</h3>
+                    <p>Curso de ajedrez impartido por "<i>Rey Enigma</i>", en el que enseña las primeras y básicas lecciones para empezar a construir ese ajedrecista que todos llevamos dentro.</p>
+                    <a href="https://www.youtube.com/watch?v=BcwkcbHRDx0&list=PLWgqlpb234bHv38g6zXoi3WIJJonzZSAl">  <button>+ Info</button></a>
+                </div>  
+            </div>
+        </div>
+    </section>
+
+    <section id="caracteristicas">
+        <div class="container">
+            <ul>
+                <li>✔️ 100% online</li>
+                <li>✔️ Interfaz sencilla</li>
+                <li>✔️ Facilidad para aprender</li>
+                <li>✔️ Biblioteca propia<nav></nav></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="final">
+        <h2>¿ Alguna duda ?</h2>
+        <a href="contacto.html">  <button>Contacta</button></a><br><br>
+        <a href="https://www.instagram.com/ikerr_sb/"><i class="fa-brands fa-instagram fa-fade fa-2xl" style="color: #ffffff;"></i></a><br><br>
+        <a href=""><i class="fa-brands fa-github fa-fade fa-2xl" style="color: #ffffff;"></i></a>
+    </section>
+
+    <footer>
+        <div class="container">
+            
+            <p>&copy; Iker Sánchez</p>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/6a7fb2ed0f.js" crossorigin="anonymous"></script>
+    <script src="js/iniciarSesionCookies.js"></script>
+</body>
+
+</html>
+

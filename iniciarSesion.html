@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos/registrarse.css">
+    <link rel="stylesheet" href="estilos/index.css">
+    <style>
+      #recuperarContrasena{
+        display: none;
+      }
+      #formulario{
+        display: block;
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <p class="logo"><a href="index.html">Xakea</a></p>
+            <nav>
+                <a href="biblioteca.php">Biblioteca</a>
+                <a href="registrarse.html">Registrarse</a>
+            </nav>
+        </div>
+    </header>
+    <div class="container3">
+        <div class="row justify-content-center mt-20">
+        <div class="col-md-5">
+         <div class="card">
+           <h2 class="card-title text-center">¡ Bienvenido de nuevo !</h2>
+           <section id="formulario">
+            <div class="card-body py-md-4">
+             <form _lpchecked="1" method="POST" action="startSession.php">
+                <div class="form-group">
+                   <input type="text" class="form-control" id="name" name="name" placeholder="Nombre de usuario" required>
+                </div> 
+                <div class="form-group">
+                  <input type="password" class="form-control" id="password" name="password" placeholder="Contraseña" required>
+                </div>
+                <div class="d-flex flex-row align-items-center justify-content-between">
+                  <input type="submit" class="btn btn-info" value="Iniciar Sesión"></input>
+                  <div class="g-signin2" data-onsuccess="onSignIn"></div>
+                  <input type="button" class="btn btn-danger" value="Olvidé mi contraseña" id="olvidar"></input>
+                </section>
+              </form>
+                        <output id="recuperarContrasena">
+                  
+                            <form _lpchecked="1" action="recuperarContrasena.php" method="post">
+                              
+                                  <input type="email" class="form-control" name="correo" placeholder="Correo electrónico" >
+                                  <input type="submit" class="btn btn-info" value="Recuperar contraseña"></input>   
+                                  <input type="button" class="btn btn-danger" value="Volver" id="volver"></input>
+                            </form>
+                          </output>
+                  </div>
+             
+           </div>
+        </div>
+      </div>
+      </div>
+      </div>
+      
+      <script src="js/olvidarContrasena.js"></script>
+      
+  </body>
+</html>
+

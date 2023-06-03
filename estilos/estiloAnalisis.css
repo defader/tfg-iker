@@ -1,0 +1,23 @@
+#todo{
+  display: flex;
+  justify-content: center;
+}
+#contenedor{
+  position: relative;
+  top: 80px;
+}
+#extras{
+  position: relative;
+  top: 150px;
+}
+#download,#upload{
+   position:relative;
+    left:3%;
+}
+#pgn{
+  width: 90%; position:relative; left:3%;
+}
+
+.iconosUnicode{
+  font-size: 24px;;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script type="module" src="https://unpkg.com/chessboard-element?module"></script>
+  <link rel="stylesheet" href="estilos/index.css">
+  <link rel="stylesheet" href="estilos/estiloAnalisis.css">
+</head>
+<body>
+  
+<header>
+    <div class="container">
+        <p class="logo"><a href="index.html"> Xakea</a></p>
+        <nav>
+            <a href="biblioteca.php">Biblioteca</a>
+            <a href="registrarse.html">Registrarse</a>
+            <a href="iniciarSesion.html">Iniciar sesión</a>
+        </nav>
+    </div>
+</header>
+
+<div id="todo">
+
+
+  <div id="contenedor">
+    <chess-board style="width: 400px;" position="start" draggable-pieces="true" id="tablero"></chess-board>
+    Opción al coronar
+    <select name="piezas" id="desplegable">
+      <option value="q" class="iconosUnicode">&#9819; </option>
+      <option value="n"  class="iconosUnicode">&#9816;</option>
+      <option value="b" class="iconosUnicode">&#9815;</option>
+      <option value="r"  class="iconosUnicode">&#9814;</option>
+    </select>
+  </div>
+  <div id="extras">
+    
+    <button id="download" onclick="download()" style="width: 40%;">Descargar PGN</button>
+    <button id="upload" style="width: 40%;"> Importar PGN</button><br><br>
+    <input type="file" name="uploadPGN" id="PGNfile" accept=".pgn" style="opacity: 0;" onchange="readFile(this)">
+    <br><br>
+    <textarea id="pgn" style="width: 90%;">PGN</textarea><br><br><br><br>
+    <button id="previous-button" ><--</button>
+    <button id="next-button">--></button>
+  </div>
+</div> 
+  <script src="js/analisis.js"></script>
+  <script src="js/juego.js"></script>
+  <script src="js/arrows.js"></script>
+</body>
+</html>
